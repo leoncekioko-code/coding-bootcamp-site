@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<head>
+  <title>coding bootcamp</title>
+  <style>
+
+    html,body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    .container {
+      
+      border: 2px black solid;
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      grid-template-areas: 
+        "header header"
+        "main content"
+        "footer footer"
+      ;
+
+      grid-template-rows: 50px 1fr 50px;
+      grid-template-columns: 200px 1fr;
+    }
+
+    .container div.header{
+      grid-area: header;
+      background-color: #ff86d0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      
+      
+    }
+
+    .container div.main{
+      grid-area: main;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    .container div.content{
+      grid-area: content;
+      background-color: blueviolet;
+      overflow: hidden;
+      
+    }
+
+    .container div.footer{
+      grid-area: footer;
+      background-color: #ff86d0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+    .content img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container button{
+     border-style: none;
+     background-color: #58CC02;
+
+    }
+
+    .container img.icon{
+
+      width: 16px;
+      height: 16px;
+    }
+
+    .container div.footerimages{
+      margin-left: auto;
+      display: flex;
+      gap: 10px;
+    }
+
+
+    .morelink{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .topic{
+      
+      
+      flex: 0 0 50%;
+      font-size: 3rem;
+      color: dodgerblue;
+    }
+  </style>  
+</head> 
+<body>
+  <div class="container">
+    <div class="header">
+      <p class="topic">Coding Bootcamp </p>  <div><button>Log in</button> <button>Sign in</button> <a href="#"><br><sub>Latest News</sub> </a></div>
+   </div>
+    
+    <div class="main">
+      <div>Home</div>
+      <div>Courses</div>
+      <div>Pricing</div>
+      <div>About</div>
+      <div>Contacts</div>
+    </div>
+    <div class="content"><img src = "cmcode.jpg" alt = "a monitor displaying code"></div>
+    <div class="footer">Rongai, Nairobi P.O BOX 197   <a class="morelink" href ="#">more> </a> <div class="footerimages"><img class="icon" src="utube.jpg" alt="youtube icon">YouTube,<img class="icon"  src="x.png" alt="x icon">X,<img class="icon"  src="instagram.jpg" alt="instagram icon" >Instagram</div></div>
+  </div>  
+</body>   
+</html>
